@@ -5,12 +5,11 @@
   "main": "index.js",
   "directories": {
     "test": "tests"
-  
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
     "start": "node index.js"
-    
+
   },
   "keywords": [],
   "author": "",
