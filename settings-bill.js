@@ -49,25 +49,27 @@ module.exports = function BillWithSettings() {
     }
 
     function recordAction(action) {
-        if(!hasReachedCriticalLevel()){
-        
-        
+        if (action) {
+            if (!hasReachedCriticalLevel()) {
 
-        let cost = 0;
-        if (action === 'sms') {
-            cost = theSmsCost;
+
+
+                let cost = 0;
+                if (action === 'sms') {
+                    cost = theSmsCost;
+                }
+                else if (action === 'call') {
+                    cost = theCallCost;
+                }
+
+                actionList.push({
+                    type: action,
+                    cost,
+                    timestamp: new Date()
+
+                });
+            }
         }
-        else if (action === 'call') {
-            cost = theCallCost;
-        }
-
-        actionList.push({
-            type: action,
-            cost,
-            timestamp: new Date()
-
-        });
-    }
     }
     function actions() {
         return actionList;
