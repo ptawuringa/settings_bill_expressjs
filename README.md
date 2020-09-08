@@ -1,4 +1,1 @@
-# bill-with-Settings
-# bill-with-Settings
-# bill-with-settings-factory-function
-# settings_bill_expressjs
+[![Build Status](https://travis-ci.com/ptawuringa/settings_bill_expressjs.svg?branch=master)](https://travis-ci.com/ptawuringa/settings_bill_expressjs)
